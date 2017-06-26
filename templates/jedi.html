@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World in Flask</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div#main {
+                max-width: 500px;
+                padding: 20px;
+            }
+
+            nav .title {                                                        
+                font-weight: bold;
+            }
+
+            a.active {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            {% extends "base.html" %}
+            {% block content %}
+            <h3> Hello {{name}}!
+            </h3>
+            <p> Your jedi name is {{jedi_name}}.
+            {% endblock %}
+        </div>
+    </body>
+</html>

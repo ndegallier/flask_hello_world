@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World in Flask</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div#main {
+                max-width: 500px;
+                padding: 20px;
+            }
+
+            nav .title {
+                font-weight: bold;
+            }
+
+            a.active {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <h1> Hello World!</h1>
+            <p>
+                This is a hello world program created with the python module flask.
+                For more entertainment, add "/hello/NAME" to the URL. If you
+                wish to see your jedi name add "/jedi/NAME/LASTNAME".
+            </p>
+            {% block content %}{% endblock %}
+            <br>
+        </div>
+    </body>
+</html>
